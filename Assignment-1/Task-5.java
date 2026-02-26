@@ -10,7 +10,9 @@ public class Check {
 		System.out.println("Enter the Number : ");
 		int number = sc.nextInt();
 		
-		int cont = Check.numberCheck(number);
+		Check obj=new Check();
+		
+		int cont = obj.numberCheck(number);
 		
 		if(cont!=0) {
 			System.out.println("The value is  "+cont);
@@ -20,7 +22,7 @@ public class Check {
 		
 
 	}
-	public static int  numberCheck (int number) {
+	public  int  numberCheck (int number) {
 		int tempNum=number;
 		int value=15;
 		if(tempNum>=0) {
