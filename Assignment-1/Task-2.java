@@ -9,25 +9,28 @@ public class Grade {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Mark : ");
 		int mark = sc.nextInt();
+		String grade="";
 		
 		if(mark>100) {
-			System.out.println("Enter the valid Mark");
+			grade = "Enter the valid Mark";
 		}
 		else if(mark>=90) {
-			System.out.println("your Grade is A");
+			grade="your Grade is A";
 		}
 		else if(mark>=80) {
-			System.out.println("your Grade is B");
+			grade="your Grade is B";
 		}
 		else if(mark>=70) {
-			System.out.println("your Grade is c");
+			grade="your Grade is C";
 		}
 		else if(mark>=60) {
-			System.out.println("your Grade is D");
+			grade="your Grade is D";
 		}
 		else {
-			System.out.println("your Grade is E");
+			grade="your Grade is E";
 		}
+		
+		System.out.println(grade);
 
 	}
 

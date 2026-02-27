@@ -18,7 +18,7 @@ public class Check {
 			System.out.println("The value is  "+cont);
 		}
 		else
-			System.out.println("you want know the value then enter the positive Number ");
+			System.out.println("If you want to know the value, then enter a positive number.");
 		
 
 	}
