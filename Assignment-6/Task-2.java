@@ -1,30 +1,26 @@
 package assignment6;
 
-class Library{
-	int memberID;
-	String memberShipType;
-	static int memberCount=501; 
-	Library(){
-		memberID=memberCount;
-		memberShipType="Regular";
-		memberCount++;
+class Mobile{
+	String model;
+	double price;
+	
+	Mobile(){
+		model="Samsung";
+		price=20000;
 	}
-	void display() {
-		System.out.println("\nMember ID : "+memberID+"\nMember Ship Type : "+memberShipType);
+	void display () {
+		System.out.println("\nModel Name : "+model+"\nPrice : "+price);
 	}
 }
 
-public class LibrarySystem {
+
+public class MobileShop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Library l1=new Library();
-		Library l2=new Library();
-		Library l3=new Library();
 		
-		l1.display();
-		l2.display();
-		l3.display();
+		Mobile m1=new Mobile();
+		m1.display();
 
 	}
 
